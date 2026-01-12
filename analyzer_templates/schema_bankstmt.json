@@ -1,0 +1,27 @@
+{
+    "description": "Banking Statement content analyzer",
+    "scenario": "document",
+    "fieldSchema": {
+        "name": "BankStatementExtraction",
+        "descriptions": "Structured information from bank starement document",
+        "BankStatement": {
+            "BankName": "string",
+            "BranchName": "string",
+            "BranchAddress": "string",
+            "AccountHolder": {
+            "Name": "string",
+            "Address": "string"
+            },
+            "OpeningBalance": "number",
+            "Transactions": [
+            {
+                "Type": "string",          
+                "Date": "string (YYYY-MM-DD)",
+                "Description": "string",
+                "Amount": "number",
+                "Balance": "number"
+            }
+        ]
+    }
+}
+}

@@ -1,0 +1,18 @@
+{
+    "description": "Extract Social Security Number (SSN) from image",
+    "scenario": "image",
+    "fieldSchema": {
+        "name": "SSNExtraction",
+        "descriptions": "Structured information from image",
+        "fields": {
+            "SSN": {
+                "type": "string",
+                "description": "The number in the format XXX-YY-ZZZZ"
+            },
+            "Full_Name": {
+                "type": "string",
+                "description": "The name of the person who is designated the SSN in the format Fistname Lastname"
+            }
+        }
+    }
+}

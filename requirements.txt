@@ -17,3 +17,4 @@ langchainhub
 openai
 Flask==2.2.5
 flask-cors==5.0.1
+azure-storage-blob>=12.18.0

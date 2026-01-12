@@ -1,0 +1,46 @@
+{
+    "description": "Credit Card Application content analyzer",
+    "scenario": "document",
+    "fieldSchema": {
+        "name": "CreditCardApplicationExtraction",
+        "descriptions": "Structured information from credit card application document",
+        "CreditCardApplication": {
+            "PersonalIdentificationDetails": {
+            "FirstName": "string",
+            "LastName": "string",
+            "DateOfBirth": "string (YYYY-MM-DD)",
+            "Gender": "string",
+            "SSN": "string (format: XXX-XX-XXXX)"
+            },
+            "ContactAndAddressInformation": {
+            "Email": "string (format: email)",
+            "Phone": "string (format: (XXX) XXX-XXXX)",
+            "Address": "string",
+            "City": "string",
+            "State": "string",
+            "ZipCode": "string",
+            "YearsStayedAtCurrentAddress": "number"
+            },
+            "EmploymentAndIncomeInformation": {
+            "EmploymentStatus": "string (e.g., Full-Time, Part-Time, Self-Employed)",
+            "YearsInJob": "number",
+            "Education": "string",
+            "SourceOfIncome": "string",
+            "MonthlyIncome": "number",
+            "MonthlyExpenses": "number",
+            "MonthlyMortgage": "number"
+            },
+            "FinancialAndBankingInformation": {
+            "BankName": "string",
+            "TypeOfAccount": "string (e.g., Checking, Savings)",
+            "CreditScore": "number"
+            },
+            "CardPreferences": {
+            "PreferredCard": "string"
+            },
+            "ConsentAndAgreements": {
+            "AgreeToTerms": "boolean"
+            }
+        }
+    }
+}
