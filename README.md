@@ -1,21 +1,11 @@
 # Azure AI Search with Content Understanding Samples (Python)
 
-Welcome! Content Understanding is an innovative solution designed to analyze and interpret diverse media types, including documents, images, audio, and video. It transforms this content into structured, organized, and searchable data. In this sample, we will demonstrate how to index your files using the rich insights extracted from the Content Understanding API, and subsequently index these files with Azure Search to enhance their searchability.
+This repository is built off of the original repository here: https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python
+
+Content Understanding is an innovative solution designed to analyze and interpret diverse media types, including documents, images, audio, and video. It transforms this content into structured, organized, and searchable data. In this sample, we will demonstrate how to index your files using the rich insights extracted from the Content Understanding API, and subsequently index these files with Azure Search to enhance their searchability.
 
 
-- The samples in this repository default to the latest preview API version: **(2024-12-01-preview)**.
-
-
-## Samples
-
-| File | Description |
-| --- | --- |
-| [search_with_multimodal_RAG.ipynb](notebooks/search_with_multimodal_RAG.ipynb) | Build a Retrieval Augmented Generation (RAG) solution by leveraging Azure AI's Content Understanding capabilities to extract unstructured data from diverse modalities, index it in Azure Search, and use Azure OpenAI for generating context-aware responses. |
-| [search_with_document_layout.ipynb](notebooks/search_with_document_layout.ipynb) | Use content understanding Layout for content extraction from Documents, and index the file in Azure search |
-| [search_with_visual_document.ipynb](notebooks/search_with_visual_document.ipynb) | Extract custom fields with content understanding API, and used it to index the file in Azure search |
-| [search_with_video.ipynb](notebooks/search_with_video.ipynb) | Extract custom fields with content understanding API, and used it to index the file in Azure search |
-| [search_with_video_webapp.ipynb](notebooks/search_with_video_webapp.ipynb) | All in one webapp UI for Video Search. Extract custom fields with content understanding API, and used it to index the file in Azure search. Performs RAG search with video visualization |
-
+- The samples in this repository default to the preview API version: **(2024-12-01-preview)**.
 
 ## Getting started
 ### GitHub Codespaces
@@ -70,10 +60,28 @@ You can run this repo virtually by using GitHub Codespaces, which will open a we
 
 ## Open a Jupyter notebook and follow the step-by-step guidance
 
-Navigate to the `notebooks` directory and select the sample notebook you are interested in. Since Codespaces is pre-configured with the necessary environment, you can directly execute each step in the notebook.
+Navigate to the `notebooks` directory and find the sample notebook below. 
 
+## Samples
+
+| File | Description |
+| --- | --- |
+| [search_with_multimodal_RAG.ipynb](notebooks/search_with_multimodal_RAG-newer-updated.ipynb) | Build a Retrieval Augmented Generation (RAG) solution by leveraging Azure AI's Content Understanding capabilities to extract unstructured data from diverse modalities, index it in Azure Search, and use Azure OpenAI for generating context-aware responses. |
+
+## What each section does
+The notebook linked above has explanations of what each step does so check it out!
 
 ## More Samples using Azure Content Understanding
+There are other examples in the original repo as well but **not** included in this repo for brevity. Find the relevant links below: 
+| File | Description |
+| --- | --- |
+| [search_with_document_layout.ipynb](https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python/blob/main/notebooks/search_with_document_layout.ipynb) | Use content understanding Layout for content extraction from Documents, and index the file in Azure search |
+| [search_with_visual_document.ipynb](https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python/blob/main/notebooks/search_with_visual_document.ipynb) | Extract custom fields with content understanding API, and used it to index the file in Azure search |
+| [search_with_video.ipynb](https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python/blob/main/notebooks/search_with_video.ipynb) | Extract custom fields with content understanding API, and used it to index the file in Azure search |
+| [search_with_video_webapp.ipynb](https://github.com/Azure-Samples/azure-ai-search-with-content-understanding-python/blob/main/notebooks/search_with_video_webapp.ipynb) | All in one webapp UI for Video Search. Extract custom fields with content understanding API, and used it to index the file in Azure search. Performs RAG search with video visualization |
+
+Also see: 
+
 [Azure Content Understanding General Samples](https://github.com/Azure-Samples/azure-ai-content-understanding-python)
 
 [Azure Content Understanding with OpenAI](https://github.com/Azure-Samples/azure-ai-content-understanding-with-azure-openai-python)
